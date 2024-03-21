@@ -40,4 +40,14 @@
   
   </delete>
   
+  <update id="update">
+  
+UPDATE MENUS
+SET  
+MENU_ID = '#{menu_id}' ,
+MENU_NAME = '#{menu_name}',
+MENU_SEQ = '#{menu_seq}'
+WHERE MENU_ID = '#{menu_id}'
+  </update>
+  
 </mapper>  	

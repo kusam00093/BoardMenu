@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="/img/favicon.png">
 <link rel="stylesheet" href="/css/common.css">
-<title>Write2</title>
+<title>Update</title>
 <style>
 input:not(input[type=submit]){
 	width : 100%;
@@ -36,18 +36,24 @@ td:nth-of-type(1){
 </head>
 <body>
   <main>
-    <h2>메뉴 등록</h2>
-    <form action="/Menus/Write2" method = "get">
+    <h2>메뉴 수정</h2>
+    <form action="/Menus/Update" method = "get">
       <table>
-      	
+      	<tr>
+      	  <td>{menu.menu_id}</td>
+      	  <td><input type="text" name ="menu_id"></td>
+      	</tr>
       	<tr>
       	  <td>메뉴 이름</td>
       	  <td><input type="text" name ="menu_name"></td>
       	</tr>
-      	
+      	<tr>
+      	  <td>메뉴 순서</td>
+      	  <td><input type="text" name ="menu_seq"></td>
+      	</tr>
       	<tr>
       	  <td colspan = "2">
-      	  <input type ="submit" value = "추가">
+      	  <input type ="submit" value = "수정">
       	  <input type ="button" value = "목록" id= "goList">
       	  </td>
       	</tr>

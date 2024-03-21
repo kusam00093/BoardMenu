@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ListList</title>
+<title>List</title>
 <link rel = "stylesheet" href="/css/common.css">
 <link rel="icon" type="image/png" href="/img/favicon.png">
 <script src="https://cdn.jsdelivr.net/npm/browser-scss@1.0.3/dist/browser-scss.min.js"></script>
@@ -58,7 +58,7 @@
 	    <td>${menu.menu_name}</td>	     
 	    <td>${menu.menu_seq}</td>	     
 	    <td><a href = "/Menus/Delete?menu_id=${menu.menu_id}">삭제</a></td>	     
-	    <td><a href = "#">수정</a></td>	     
+	    <td><a href = "/Menus/UpdateForm?menu_id=${menu.menu_id}">수정</a></td>	     
       </tr>
       </c:forEach>
     </table>
