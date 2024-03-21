@@ -29,7 +29,7 @@ public class MenuController {
 		return "menus/list";
 	}
 	
-	
+	//---------------------------------------------------------------------
 	
 	
 	// 메뉴 입력받는 화면	//@RequestMapping("/Menus/WriteForm")
@@ -56,6 +56,27 @@ public class MenuController {
 		//return "menus/list";
 	}
 	
+	//--------------------------------------------------------------------------
+	
+	//  /Menus/WriteForm2
+	@RequestMapping("/WriteForm2")
+	public String writeForm2() {
+		
+		return "menus/write2";
+	}
+	
+	@RequestMapping("/Write2")
+	public String write2(MenuVo menuVo) {
+		// 저장
+		
+		menuMapper.insertMenuByName(menuVo);
+		//조회로 이동
+		
+		return "redirect:/Menus/List";
+	}
+	
+	
+	
 	// 메뉴 삭제 /Menus/Delete?menu_id=?
 	@RequestMapping("/Delete")
 	@ResponseBody
@@ -69,10 +90,6 @@ public class MenuController {
 		html        +="</script>";
 		return html;
 	}
-	
-	
-
-	
 	
 	/*
 	// 메뉴 삭제 /Menus/Delete?menu_id=MENU03
