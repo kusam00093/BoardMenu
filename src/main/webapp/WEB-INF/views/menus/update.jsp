@@ -40,16 +40,16 @@ td:nth-of-type(1){
     <form action="/Menus/Update" method = "get">
       <table>
       	<tr>
-      	  <td>{menu.menu_id}</td>
-      	  <td><input type="text" name ="menu_id"></td>
+      	  <td>메뉴 아이디</td>
+      	  <td><input type="text" name ="menu_id" value="${menu.menu_id}" readonly></td>
       	</tr>
       	<tr>
       	  <td>메뉴 이름</td>
-      	  <td><input type="text" name ="menu_name"></td>
+      	  <td><input type="text" name ="menu_name" value = "${menu.menu_name}"></td>
       	</tr>
       	<tr>
       	  <td>메뉴 순서</td>
-      	  <td><input type="text" name ="menu_seq"></td>
+      	  <td><input type="number" name ="menu_seq" value ="${menu.menu_seq}"></td>
       	</tr>
       	<tr>
       	  <td colspan = "2">

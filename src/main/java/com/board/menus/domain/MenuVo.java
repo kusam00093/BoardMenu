@@ -15,7 +15,7 @@ import lombok.ToString;
 
 
 public class MenuVo {
-	
+
 	@NonNull
 	private String menu_id;
 	private String menu_name;
